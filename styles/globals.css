@@ -6,3 +6,7 @@ html, body {
     background: #C5E4E7;
     font-family: 'Roboto Mono';
 }
+
+p {
+    color: #00474B;
+}

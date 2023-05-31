@@ -7,22 +7,27 @@ const mock = [
   {
     label: "5%",
     value: 5,
+    isSelected: false,
   },
   {
     label: "10%",
     value: 10,
+    isSelected: false,
   },
   {
     label: "15%",
     value: 15,
+    isSelected: false,
   },
   {
     label: "25%",
     value: 25,
+    isSelected: false,
   },
   {
     label: "50%",
     value: 50,
+    isSelected: false,
   },
 ];
 
@@ -85,12 +90,14 @@ export const CalculatorPage: FC = () => {
         <div className="grid grid-cols-2 gap-10">
           <div className="flex flex-col gap-10">
             <NumericInput
+              icon="dollar"
               type="decimal"
               label="Bill"
               onChange={handleBillChange}
             />
             <SelectBoxes options={mock} onSelectBox={handleSelectBox} />
             <NumericInput
+              icon="person"
               type="integer"
               label="Number of People"
               onChange={handlePeopleNumberChange}
